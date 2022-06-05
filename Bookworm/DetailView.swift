@@ -68,8 +68,7 @@ struct DetailView: View {
     func deleteBook() {
         moc.delete(book)
 
-        // uncomment this line if you want to make the deletion permanent
-        // try? moc.save()
+        try? moc.save()
         dismiss()
     }
 
